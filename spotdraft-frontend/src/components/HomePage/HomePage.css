@@ -1,0 +1,127 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  background-color: #f3fffd;
+  height: 90px;
+  z-index: 1;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  background-color: #5edce2;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: rgb(51, 180, 180);
+}
+
+.option-dropdown {
+  display: none;
+}
+.data-container {
+  display: flex;
+  margin-left: 150px;
+  margin-top: 90px;
+}
+
+.end-icons-container {
+  display: none;
+}
+.upload-icon {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .logout-button {
+    display: none;
+  }
+  .option-dropdown {
+    display: block;
+  }
+  .data-container {
+    display: flex;
+    flex: 1;
+    margin-left: 0;
+  }
+  .upload-icon {
+    background-color: rgb(122, 210, 228);
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .end-icons-container {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+  }
+}
+
+.data-sidebar-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.pdf-tab-container {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  flex-direction: column;
+  background-color: #ebfaf9;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.checkbox-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.data-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+}
+.pdf-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.no-pdf-found {
+  margin: 10px;
+}
